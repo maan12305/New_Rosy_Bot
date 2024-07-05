@@ -447,12 +447,3 @@ special Thanks To ❤️ Developer -
 
 -Dev [Owner of this bot ]<a href='https://t.me/Im_professor_22'>MAAN</a>
 """
-
-   MOVIES_UPDATE_TXT = """<b>#New_File_Added
-
-Title: {title}
-Rating: {rating}
-Genre: {genre}
-
-Description: {description}
-</b>"""

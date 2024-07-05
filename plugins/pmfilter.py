@@ -1395,7 +1395,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  InlineKeyboardButton('ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ', url=link.invite_link),
                  InlineKeyboardButton("ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("🔍 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url="https://t.me/MoviesLinkSearchBot2")
+                 InlineKeyboardButton("🔍 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url="https://t.me/request_channels")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -2209,9 +2209,9 @@ async def auto_filter(client, msg, spoll=False):
                 cap += f"<b>\n<a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'> 📁 {get_size(file.file_size)} ▷ {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n</a></b>"
     else:
         if settings["button"]:
-            cap = f"<b>🧿 ᴛɪᴛʟᴇ : <code>{search}</code>\n📂 ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{total_results}</code>\n📝 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.mention}\n⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n⚜️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : 👇\n⚡ {message.chat.title} \n\n</b>"
+            cap = f"✪ **{search}**  𝙐𝙥𝙡𝙤𝙖𝙙𝙚𝙙 𝘽𝙮 ☟  **@maam_movies_backup**  ⚜ 𝙁𝙤𝙪𝙣𝙙𝙚𝙙 𝙍𝙚𝙨𝙪𝙡𝙩𝙨 𝙁𝙤𝙧 𝙔𝙤𝙪𝙧 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 ❤️‍🔥"
         else:
-            cap = f"<b>🧿 ᴛɪᴛʟᴇ : <code>{search}</code>\n📂 ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{total_results}</code>\n📝 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.mention}\n⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n⚜️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : 👇\n⚡ {message.chat.title} \n\n</b>"
+            cap = f"✪ **{search}**  𝙐𝙥𝙡𝙤𝙖𝙙𝙚𝙙 𝘽𝙮 ☟  **@maam_movies_backup**  ⚜ 𝙁𝙤𝙪𝙣𝙙𝙚𝙙 𝙍𝙚𝙨𝙪𝙡𝙩𝙨 𝙁𝙤𝙧 𝙔𝙤𝙪𝙧 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 ❤️‍🔥"
             # cap+="<b>Hᴇʏ {message.from_user.mention}, Hᴇʀᴇ ɪs ᴛʜᴇ ʀᴇsᴜʟᴛ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search} \n\n</b>"
             for file in files:
                 cap += f"<b><a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'> 📁 {get_size(file.file_size)} ▷ {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
